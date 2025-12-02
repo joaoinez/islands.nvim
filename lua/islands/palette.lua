@@ -2,6 +2,7 @@
 ---@field bg string
 ---@field fg string
 ---@field selection string
+---@field cursorline string
 ---@field comment string
 ---@field red string
 ---@field orange string
@@ -23,10 +24,13 @@
 ---@field nontext string
 ---@field white string
 ---@field black string
+---@field type_cyan string
+---@field keyword_blue string
 return {
    bg = "#191A1C",
    fg = "#F0F0F0",
    selection = "#08335E",
+   cursorline = "#202424",
    comment = "#85C46C",
    red = "#FF5647",
    orange = "#FF9259",
@@ -48,4 +52,6 @@ return {
    nontext = "#404040",
    white = "#BDBDBD",
    black = "#191A1C",
+   type_cyan = "#66C3CC",
+   keyword_blue = "#6C95EB",
 }
