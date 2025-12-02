@@ -1,8 +1,8 @@
-<h1 align="center" >🧛‍♂️ dracula.nvim</h1>
+<h1 align="center" >🏝️ islands.nvim</h1>
 
-<p align="center"><a href="https://draculatheme.com/">Dracula</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
+<p align="center"><a href="https://github.com/joaoinez/islands.nvim">Islands</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
 
-![dracula.nvim](./assets/showcase.png)
+![islands.nvim](./assets/showcase.png)
 
 
 ## ✔️ Requirements
@@ -10,7 +10,7 @@
 - Neovim >= 0.9.2
 - Treesitter (optional)
 
-NOTICE: if you use an older version of neovim (>=0.8.0 <0.9.2), you can pin this plugin to [commit 8fc749](https://github.com/Mofiqul/dracula.nvim/commit/8fc749e2479d62829c9c627867770035b74529a4)
+NOTICE: if you use an older version of neovim (>=0.8.0 <0.9.2), you can pin this plugin to an earlier commit
 
 ## #️ Supported Plugins
 
@@ -39,39 +39,39 @@ Install via package manager
 
 ```lua
 -- Using Packer:
-use 'Mofiqul/dracula.nvim'
+use 'joaoinez/islands.nvim'
 ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/dracula.nvim'
+Plug 'joaoinez/islands.nvim'
 ```
 
 ## 🚀 Usage
 
 ```lua
 -- Lua:
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme islands]]
 -- or
-vim.cmd[[colorscheme dracula-soft]]
+vim.cmd[[colorscheme islands-soft]]
 ```
 
 ```vim
 " Vim-Script:
-colorscheme dracula
+colorscheme islands
 " or:
-colorscheme dracula-soft
+colorscheme islands-soft
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
-> Make sure to set theme as 'dracula-nvim' as dracula already exists in lualine built in themes
+> Make sure to set theme as 'islands-nvim' as islands is a custom theme
 
 ```lua
 require('lualine').setup {
   options = {
     -- ...
-    theme = 'dracula-nvim'
+    theme = 'islands-nvim'
     -- ...
   }
 }
@@ -80,14 +80,14 @@ require('lualine').setup {
 If you are using [LazyVim](https://github.com/LazyVim/LazyVim), you can add this to your plugins/colorscheme.lua file:
 ```lua
 return {
-  -- add dracula
-  { "Mofiqul/dracula.nvim" },
+  -- add islands
+  { "joaoinez/islands.nvim" },
 
-  -- Configure LazyVim to load dracula
+  -- Configure LazyVim to load islands
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dracula",
+      colorscheme = "islands",
     },
   },
 }
@@ -96,14 +96,14 @@ return {
 ## 🔧 Configuration
 
 The configuration must be run before `colorscheme` command to take effect.
-To customize the 'dracula-soft' variant, include `theme = 'dracula-soft'` in the `setup()` table below.
+To customize the 'islands-soft' variant, include `theme = 'islands-soft'` in the `setup()` table below.
 
 If you're using Lua:
 
 ```lua
-local dracula = require("dracula")
-dracula.setup({
-  -- customize dracula color palette
+local islands = require("islands")
+islands.setup({
+  -- customize islands color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -158,9 +158,9 @@ dracula.setup({
 ## 🎨 Importing colors for other usage
 
 ```lua
-local colors = require('dracula').colors()
+local colors = require('islands').colors()
 ```
 
-This will return the following table (`dracula` palette shown):
+This will return the following table (`islands` palette shown):
 
 ![colors](./assets/colors.png)
