@@ -4,7 +4,6 @@
 
 ![islands.nvim](./assets/showcase.png)
 
-
 ## ✔️ Requirements
 
 - Neovim >= 0.9.2
@@ -52,15 +51,11 @@ Plug 'joaoinez/islands.nvim'
 ```lua
 -- Lua:
 vim.cmd[[colorscheme islands]]
--- or
-vim.cmd[[colorscheme islands-soft]]
 ```
 
 ```vim
 " Vim-Script:
 colorscheme islands
-" or:
-colorscheme islands-soft
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
@@ -78,6 +73,7 @@ require('lualine').setup {
 ```
 
 If you are using [LazyVim](https://github.com/LazyVim/LazyVim), you can add this to your plugins/colorscheme.lua file:
+
 ```lua
 return {
   -- add islands
@@ -96,7 +92,6 @@ return {
 ## 🔧 Configuration
 
 The configuration must be run before `colorscheme` command to take effect.
-To customize the 'islands-soft' variant, include `theme = 'islands-soft'` in the `setup()` table below.
 
 If you're using Lua:
 
