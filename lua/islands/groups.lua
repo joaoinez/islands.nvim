@@ -80,9 +80,9 @@ local function setup(configs)
       SignColumn = { bg = colors.bg, },
 
       Conceal = { fg = colors.comment, },
-      CursorColumn = { bg = colors.black, },
+      CursorColumn = { bg = colors.subtle_bg, },
       CursorLine = { bg = colors.cursorline, },
-      ColorColumn = { bg = colors.selection, },
+      ColorColumn = { bg = colors.subtle_bg, },
 
       StatusLine = { fg = colors.white, bg = colors.selection, },
       StatusLineNC = { fg = colors.comment, },

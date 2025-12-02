@@ -2,7 +2,7 @@ local islands = require("islands")
 local configs = islands.configs()
 local colors = islands.colors()
 
-local bg = configs.lualine_bg_color or colors.black
+local bg = configs.lualine_bg_color or colors.subtle_bg
 
 local normal = {
    a = { fg = colors.black, bg = colors.purple, gui = 'bold' },

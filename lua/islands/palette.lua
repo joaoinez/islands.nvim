@@ -26,6 +26,7 @@
 ---@field black string
 ---@field type_cyan string
 ---@field keyword_blue string
+---@field subtle_bg string
 return {
    bg = "#191A1C",
    fg = "#F0F0F0",
@@ -54,4 +55,5 @@ return {
    black = "#191A1C",
    type_cyan = "#66C3CC",
    keyword_blue = "#6C95EB",
+   subtle_bg = "#303030",
 }
